@@ -1,8 +1,8 @@
 import React from 'react';
-import HelloReact from './components/Header';
+import Container from './components/Container';
 
 function App() {
-  return <HelloReact />;
+  return <Container />;
 }
 
 export default App;
