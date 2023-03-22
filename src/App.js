@@ -1,8 +1,8 @@
 import React from 'react';
-import Header from './components/Body';
+import Body from './components/Body';
 
 function App() {
-  return <Header />;
+  return <Body />;
 }
 
 export default App;

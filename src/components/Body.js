@@ -1,6 +1,8 @@
 import React from 'react';
 // components and pages
-import Nav from './Nav';
+import Header from './Header'
+// import Nav from './Nav';
+// include Nav as part of Header.
 import Footer from './Footer';
 import About from './pages/About';
 import Contact from './pages/Contact';
@@ -10,10 +12,10 @@ import Resume from './pages/Resume';
 
 
 // function to check value of currentPage (from useState)
-function Header() {
+function Body() {
   const [currentPage, setCurrentPage] = useState('Home');
 
-// return current page
+  // return current page
   const renderPage = () => {
     if (currentPage === 'Home') {
       return <Home />;
@@ -30,16 +32,22 @@ function Header() {
     return <Contact />;
   };
 
-// set state to current page
+  // set state to current page
   const handlePageChange = (page) => setCurrentPage(page);
 
   return (
     <div>
-      <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
-      {renderPage()}
+      <Header />
+      <main>
+        <div>
+          <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
+          {renderPage()}
+        </div>
+      </main>
+      <Footer />
     </div>
   );
 }
 
 
-export default Header;
+export default Body;
