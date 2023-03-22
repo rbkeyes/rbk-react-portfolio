@@ -1,8 +1,6 @@
 import React from 'react';
 // components and pages
 import Header from './Header'
-// import Nav from './Nav';
-// include Nav as part of Header.
 import Footer from './Footer';
 import About from './pages/About';
 import Contact from './pages/Contact';
