@@ -1,15 +1,7 @@
 import React from "react";
 import { IconContext } from 'react-icons';
 import { FaGithub, FaLinkedin, FaRavelry } from 'react-icons/fa';
-// import { FaLinkedin } from 'react-icons/fa';
-// import { FaRavelry } from 'react-icons/fa';
 
-
-const styles = {
-    li: {
-        
-    }
-}
 
 function Footer() {
     return (
