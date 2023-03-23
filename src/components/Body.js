@@ -1,24 +1,20 @@
-import { React, useState} from 'react';
+import { React, useState } from 'react';
 // components and pages
 import Header from './Header'
 import Nav from './Nav';
 import Footer from './Footer';
 import About from './pages/About';
 import Contact from './pages/Contact';
-import Home from './pages/Home';
 import Portfolio from './pages/Portfolio';
 import Resume from './pages/Resume';
 
 
 // function to check value of currentPage (from useState)
 function Body() {
-  const [currentPage, setCurrentPage] = useState('Home');
+  const [currentPage, setCurrentPage] = useState('About');
 
   // return current page
   const renderPage = () => {
-    if (currentPage === 'Home') {
-      return <Home />;
-    }
     if (currentPage === 'About') {
       return <About />;
     }
@@ -35,17 +31,12 @@ function Body() {
   const handlePageChange = (page) => setCurrentPage(page);
 
   return (
-    <div>
+    <>
       <Header />
-      {/* <main>
-        <div>
-          <Nav currentPage={currentPage} handlePageChange={handlePageChange} />
-          {renderPage()}
-        </div>
-      </main>
-       */}
-       <Footer />
-    </div>
+      <Nav currentPage={currentPage} handlePageChange={handlePageChange}/>
+      {renderPage()}
+      <Footer />
+    </>
   );
 }
 

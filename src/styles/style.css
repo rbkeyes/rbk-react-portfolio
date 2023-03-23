@@ -1,0 +1,34 @@
+:root {
+    --light: #E1DED4;
+    --dark: #2D2834;
+    --med-light: #8B8B9A;
+    --med-dark: #6B6978;
+    --accent: #A694AE;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rem 2rem;
+}
+
+h1 {
+    padding: .5rem;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+li {
+    padding: 1rem 2rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
