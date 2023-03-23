@@ -1,6 +1,6 @@
 :root {
-    --light-bg: #E1DED4;
-    --dark-bg: #2D2834;
+    --light: #E1DED4;
+    --dark: #2D2834;
     --med-light: #8B8B9A;
     --med-dark: #6B6978;
     --accent: #A694AE;
@@ -30,4 +30,5 @@ li {
 
 a {
     text-decoration: none;
+    color: black;
 }
