@@ -1,8 +1,8 @@
 import React from 'react';
-import HelloReact from './components/Header';
+import Body from './components/Body';
 
 function App() {
-  return <HelloReact />;
+  return <Body />;
 }
 
 export default App;
