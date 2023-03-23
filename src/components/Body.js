@@ -1,6 +1,7 @@
-import React from 'react';
+import { React, useState} from 'react';
 // components and pages
 import Header from './Header'
+import Nav from './Nav';
 import Footer from './Footer';
 import About from './pages/About';
 import Contact from './pages/Contact';
@@ -36,13 +37,14 @@ function Body() {
   return (
     <div>
       <Header />
-      <main>
+      {/* <main>
         <div>
-          <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
+          <Nav currentPage={currentPage} handlePageChange={handlePageChange} />
           {renderPage()}
         </div>
       </main>
-      <Footer />
+       */}
+       <Footer />
     </div>
   );
 }

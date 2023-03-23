@@ -1,5 +1,5 @@
 import React from "react";
-import Nav from "./Nav";
+// import Nav from "./Nav";
 
 // const styles = {
 //     headerStyle: {
@@ -16,7 +16,7 @@ import Nav from "./Nav";
       <header className="header">
         <h1>Reed Keyes</h1>
         <p>Developer, Designer, Dietitian</p>
-        <Nav />
+        {/* <Nav /> */}
       </header>
     );
   }
