@@ -1,22 +1,82 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-export default function Contact() {
-  return (
+function BucketForm(props) {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    props.onSubmit({
+      id: Math.random(Math.floor() * 1000),
+      name,
+      email,
+      message
+    });
+
+    setName('');
+    setEmail('');
+    setMessage('');
+  };
+
+  const handleChange = (e) => {
+    setInput(e.target.value);
+  };
+
+  // First we check to see if "edit" prop exists. If not, we render the normal form
+  // If the prop "edit" exists, we know to render the update form instead
+  return !props.edit ? (
     <div>
-      <h1>Contact Page</h1>
-      <p>
-        Integer cursus bibendum sem non pretium. Vestibulum in aliquet sem, quis
-        molestie urna. Aliquam semper ultrices varius. Aliquam faucibus sit amet
-        magna a ultrices. Aenean pellentesque placerat lacus imperdiet
-        efficitur. In felis nisl, luctus non ante euismod, tincidunt bibendum
-        mi. In a molestie nisl, eu sodales diam. Nam tincidunt lacus quis magna
-        posuere, eget tristique dui dapibus. Maecenas fermentum elementum
-        faucibus. Quisque nec metus vestibulum, egestas massa eu, sollicitudin
-        ipsum. Nulla facilisi. Sed ut erat ligula. Nam tincidunt nunc in nibh
-        dictum ullamcorper. Class aptent taciti sociosqu ad litora torquent per
-        conubia nostra, per inceptos himenaeos. Etiam ornare rutrum felis at
-        rhoncus. Etiam vel condimentum magna, quis tempor nulla.
-      </p>
+      <form className="bucket-form" onSubmit={handleSubmit}>
+        <input
+          type="text"
+          placeholder="Add to your bucket list"
+          value={input}
+          name="text"
+          className="bucket-input"
+          onChange={handleChange}
+        ></input>
+        <div className="dropdown">
+          <button className={`dropbtn ${eagerness}`}>
+            {eagerness || 'Priority'}
+          </button>
+          <div className="dropdown-content">
+            <p onClick={() => setEagerness(eagernessLevel[0])}>Must do</p>
+            <p onClick={() => setEagerness(eagernessLevel[1])}>Want to do</p>
+            <p onClick={() => setEagerness(eagernessLevel[2])}>Take it or leave it</p>
+          </div>
+        </div>
+        <button className="bucket-button">Add bucket list item</button>
+      </form>
+    </div>
+  ) : (
+    <div>
+      <h3>Update entry: {props.edit.value}</h3>
+      <form className="bucket-form" onSubmit={handleSubmit}>
+        <input
+          type="text"
+          placeholder={props.edit.value}
+          value={input}
+          name="text"
+          className="bucket-input"
+          onChange={handleChange}
+        ></input>
+        <div className="dropdown">
+          <button className={`dropbtn ${eagerness}`}>
+            {eagerness || 'Priority'}
+          </button>
+          <div className="dropdown-content">
+            <p onClick={() => setEagerness(eagernessLevel[0])}>Must do</p>
+            <p onClick={() => setEagerness(eagernessLevel[1])}>Want to do</p>
+            <p onClick={() => setEagerness(eagernessLevel[2])}>Take it or leave it</p>
+          </div>
+        </div>
+        <button className="bucket-button">Update</button>
+      </form>
     </div>
   );
 }
+
+export default BucketForm;
