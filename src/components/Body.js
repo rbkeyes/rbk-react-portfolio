@@ -4,7 +4,7 @@ import Header from './Header'
 import Nav from './Nav';
 import Footer from './Footer';
 import About from './pages/About';
-import Contact from './pages/Contact';
+import Contact from './pages/ContactForm';
 import Portfolio from './pages/Portfolio';
 import Resume from './pages/Resume';
 
