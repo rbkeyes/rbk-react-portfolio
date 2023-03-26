@@ -52,7 +52,7 @@ const styles = {
 }
 
   return (
-    <div class="d-flex justify-content-around align-items-start p-4">
+    <div className="d-flex justify-content-around align-items-start p-4">
     <form className="contact-form col-md-4" onSubmit={handleSubmit}>
       <div className="form-floating mb-3">
         <input
@@ -61,10 +61,10 @@ const styles = {
           placeholder="name"
           value={name}
           name="name"
-          idName="floatingName"
+          id="floatingName"
           onChange={handleName}
         ></input>
-        <label for="floatingName">name</label>
+        <label>name</label>
       </div>
       <div className='form-floating mb-3'>
         <input
@@ -73,10 +73,10 @@ const styles = {
           placeholder="email"
           value={email}
           name="email"
-          idName="floatingEmail"
+          id="floatingEmail"
           onChange={handleEmail}
         ></input>
-        <label for="floatingEmail">email</label>
+        <label>email</label>
       </div>
       <div className='form-floating mb-3'>
         <textarea
@@ -85,13 +85,13 @@ const styles = {
           placeholder="what can I do for you?"
           value={message}
           name="message"
-          idName="floatingMessage" 
+          id="floatingMessage" 
           style={styles.textarea}         
           onChange={handleMessage}
         ></textarea>
-          <label for="floatingMessage">what can I do for you?</label>
+          <label>what can I do for you?</label>
       </div>
-      <button type="submit" className="btn btn-primary" idName="submit-button">Submit</button>
+      <button type="submit" className="btn btn-primary" id="submit-button">Submit</button>
     </form>
     </div>
   )
