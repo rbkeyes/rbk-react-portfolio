@@ -7,8 +7,9 @@ function ContactForm(props) {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
 
-  // useState variable to set valid true/false
-  // const [validation, isValid] = useState('');
+  // 🔮 use activities 15 & 16 to finish form functionality
+  // todo: alerts for empty fields
+  // todo: 
 
   // handle form submit
   const handleSubmit = (e) => {
