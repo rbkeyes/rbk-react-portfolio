@@ -6,7 +6,7 @@
     --accent: #A694AE;
 }
 main {
-    margin: 0 8rem;
+    margin: 0 12rem;
 }
 
 header {
@@ -34,5 +34,9 @@ li {
 a {
     text-decoration: none;
     color: black;
+}
+
+card-link:hover {
+    color: pink;
 }
 
