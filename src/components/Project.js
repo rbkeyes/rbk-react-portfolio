@@ -6,15 +6,10 @@ function Project( {...props} ) {
 
     const styles = {
         card: {
-            "padding": "1rem",
             "margin": "1rem",
-            "backgroundColor": "#e6e7e8"
-        },
-        link: { 
-            "color": "#e6e7e8"
-        }
-        
-    }
+            "backgroundColor": "var(--accent)"
+        }, 
+    };
 
     const [onHover, setHover] = useState(false);
 
@@ -33,17 +28,15 @@ function Project( {...props} ) {
                 ></img>
                 {onHover &&
                     <div
-                        className='card-img-overlay d-flex flex-column justify-content-end align-items-start bg-dark'
-                        style={{ '--bs-bg-opacity': .75, "padding": "2rem" }}>
+                        className='card-img-overlay d-flex flex-column justify-content-end align-items-start'>
                             <div className='mb-5 mr-2'>
-                        <a className='link-light' href={props.project.link} style={styles.link}>
+                        <a className='card-link' href={props.project.link}>
                             <h3 className="card-title mb-4">{props.project.title}</h3></a>
                         <IconContext.Provider value={{ className: "card-icon", size: "3rem" }}>
                             <a
-                                className='link-light'
+                                className='card-link'
                                 href={props.project.github}
                                 alt="Link to github profile"
-                                style={styles.link}
                                 ><FaGithub
                                 />
                             </a>

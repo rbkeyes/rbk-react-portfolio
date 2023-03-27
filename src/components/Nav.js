@@ -1,5 +1,6 @@
 import React from "react";
 
+
 function Nav({ currentPage, handlePageChange }) {
     return (
         <ul className='nav'>
