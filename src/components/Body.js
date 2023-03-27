@@ -34,7 +34,9 @@ function Body() {
     <>
       <Header />
       <Nav currentPage={currentPage} handlePageChange={handlePageChange}/>
+      <main>
       {renderPage()}
+      </main>
       <Footer />
     </>
   );

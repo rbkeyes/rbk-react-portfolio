@@ -1,6 +1,6 @@
 import React from 'react';
 import Body from './components/Body';
-import './styles/style.css'
+// import './styles/style.css'
 
 function App() {
   return <Body />;

@@ -5,6 +5,9 @@
     --med-dark: #6B6978;
     --accent: #A694AE;
 }
+main {
+    margin: 0 12rem;
+}
 
 header {
     display: flex;
@@ -31,5 +34,9 @@ li {
 a {
     text-decoration: none;
     color: black;
+}
+
+card-link:hover {
+    color: pink;
 }
 
