@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 
-// contact form takes in props
-function ContactForm(props) {
+function ContactForm() {
   // useState variables for name, email, and form message
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
+
 
   // 🔮 use activities 15 & 16 to finish form functionality
   // todo: alerts for empty fields
@@ -27,6 +27,8 @@ function ContactForm(props) {
     setName('');
     setEmail('');
     setMessage('');
+
+
   };
 
   const handleName = (e) => {
@@ -40,10 +42,6 @@ function ContactForm(props) {
   const handleMessage = (e) => {
     setMessage(e.target.value);
   };
-
-  // const handleInputValidation = (e) => {
-  //   e.target.value ? isValid(true) : isValid(false);
-  // };
 
 
 const styles = {

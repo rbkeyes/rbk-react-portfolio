@@ -5,6 +5,9 @@
     --med-dark: #6B6978;
     --accent: #A694AE;
 }
+main {
+    margin: 0 8rem;
+}
 
 header {
     display: flex;
