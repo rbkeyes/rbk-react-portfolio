@@ -8,7 +8,6 @@ import Contact from './pages/ContactForm';
 import Portfolio from './pages/Portfolio';
 import Resume from './pages/Resume';
 
-
 // function to check value of currentPage (from useState)
 function Body() {
   const [currentPage, setCurrentPage] = useState('About');
@@ -32,15 +31,19 @@ function Body() {
 
   return (
     <>
-      <Header />
-      <Nav currentPage={currentPage} handlePageChange={handlePageChange}/>
+      <header>
+        <Header />
+        <Nav currentPage={currentPage} handlePageChange={handlePageChange} />
+      </header>
       <main>
-      {renderPage()}
+        {renderPage()}
       </main>
+      <footer>
       <Footer />
+      </footer>
     </>
   );
 }
 
 
-export default Body;
+export default Body;;

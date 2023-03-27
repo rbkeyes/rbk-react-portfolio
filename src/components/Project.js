@@ -36,13 +36,14 @@ function Project( {...props} ) {
                         className='card-img-overlay d-flex flex-column justify-content-end align-items-start bg-dark'
                         style={{ '--bs-bg-opacity': .75, "padding": "2rem" }}>
                             <div className='mb-5 mr-2'>
-                        <a className='link-light' href={props.project.link}>
+                        <a className='link-light' href={props.project.link} style={styles.link}>
                             <h3 className="card-title mb-4">{props.project.title}</h3></a>
                         <IconContext.Provider value={{ className: "card-icon", size: "3rem" }}>
                             <a
                                 className='link-light'
                                 href={props.project.github}
                                 alt="Link to github profile"
+                                style={styles.link}
                                 ><FaGithub
                                 />
                             </a>
