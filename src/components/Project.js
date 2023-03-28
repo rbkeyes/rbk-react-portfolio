@@ -4,12 +4,6 @@ import { FaGithub } from "react-icons/fa";
 
 function Project( {...props} ) {
 
-    const styles = {
-        card: {
-            "margin": "1rem",
-            "backgroundColor": "var(--accent)"
-        }, 
-    };
 
     const [onHover, setHover] = useState(false);
 
@@ -20,7 +14,7 @@ function Project( {...props} ) {
                 key={props.project.title}
                 onMouseEnter={(e) => setHover(true)}
                 onMouseLeave={(e) => setHover(false)}
-                style={styles.card}>
+                >
                 <img
                     className="card-img img-fluid"
                     src={window.location.origin + props.project.path}

@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+import { IconContext } from 'react-icons';
+import { FaPhone } from 'react-icons/fa';
+import { GoMail } from "react-icons/go";
 
 function ContactForm() {
   // useState variables for name, email, and form message
@@ -27,8 +30,6 @@ function ContactForm() {
     setName('');
     setEmail('');
     setMessage('');
-
-
   };
 
   const handleName = (e) => {
@@ -43,56 +44,79 @@ function ContactForm() {
     setMessage(e.target.value);
   };
 
-
-const styles = {
-  textarea: {
-    height: "10rem"
-  }
-}
+  const styles = {
+    textarea: {
+      "height": "10rem",
+    },
+    contactDiv: {
+      "margin": "3rem"
+    },
+    contactInfo: {
+      "padding": "1rem",
+      "display": "inline-block",
+    }
+  };
 
   return (
-    <div className="d-flex justify-content-around align-items-start p-4">
-    <form className="contact-form col-md-4" onSubmit={handleSubmit}>
-      <div className="form-floating mb-3">
-        <input
-          className="form-control name"
-          type="text"
-          placeholder="name"
-          value={name}
-          name="name"
-          id="floatingName"
-          onChange={handleName}
-        ></input>
-        <label>name</label>
+    <main>
+      <div className="d-flex justify-content-center align-items-start">
+        <form className="contact-form col-sm-12 col-md-8 col-lg-6" onSubmit={handleSubmit}>
+          <h2>Contact</h2>
+          <div className="form-floating mt-3">
+            <input
+              className="form-control name"
+              type="text"
+              placeholder="name"
+              value={name}
+              name="name"
+              id="floatingName"
+              onChange={handleName}
+            ></input>
+            <label>name</label>
+          </div>
+          <div className='form-floating mt-3'>
+            <input
+              className="form-control email"
+              type="email"
+              placeholder="email"
+              value={email}
+              name="email"
+              id="floatingEmail"
+              onChange={handleEmail}
+            ></input>
+            <label>email</label>
+          </div>
+          <div className='form-floating mt-3'>
+            <textarea
+              className="form-control message"
+              type="text"
+              placeholder="what can I do for you?"
+              value={message}
+              name="message"
+              id="floatingMessage"
+              style={styles.textarea}
+              onChange={handleMessage}
+            ></textarea>
+            <label>what can I do for you?</label>
+          </div>
+          <button type="submit" className="btn mt-3" id="submit-button">Submit</button>
+        </form>
       </div>
-      <div className='form-floating mb-3'>
-        <input
-          className="form-control email"
-          type="email"
-          placeholder="email"
-          value={email}
-          name="email"
-          id="floatingEmail"
-          onChange={handleEmail}
-        ></input>
-        <label>email</label>
+      <div className="d-flex justify-content-center align-items-center">
+        <div style={styles.contactDiv}>
+        <IconContext.Provider value={{ className: "footer-icons", size: "1.5rem" }}>
+        <FaPhone />
+              <h5 style={styles.contactInfo}> 650-400-2394</h5>
+        </IconContext.Provider>
+        </div>
+        <div style={styles.contactDiv}>
+        <IconContext.Provider value={{ className: "footer-icons", size: "2rem" }}>
+        <GoMail />
+              <h5 style={styles.contactInfo}> rbkeyes@gmail.com</h5>
+        </IconContext.Provider>
+        </div>
       </div>
-      <div className='form-floating mb-3'>
-        <textarea
-          className="form-control message"
-          type="text"
-          placeholder="what can I do for you?"
-          value={message}
-          name="message"
-          id="floatingMessage" 
-          style={styles.textarea}         
-          onChange={handleMessage}
-        ></textarea>
-          <label>what can I do for you?</label>
-      </div>
-      <button type="submit" className="btn btn-primary" id="submit-button">Submit</button>
-    </form>
-    </div>
+    </main >
   )
 };
 
