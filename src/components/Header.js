@@ -6,6 +6,7 @@ import Portfolio from './pages/Portfolio';
 import Resume from './pages/Resume';
 
 export default function Header() {
+
   const [currentPage, setCurrentPage] = useState('About');
 
   // return current page
@@ -28,7 +29,6 @@ export default function Header() {
   return (
     <>
     <header>
-      <h1>Reed Keyes</h1>
       <Nav currentPage={currentPage} handlePageChange={handlePageChange} />
       </header>
       {renderPage()}

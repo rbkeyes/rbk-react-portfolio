@@ -3,13 +3,13 @@ import React from 'react';
 import Header from './Header';
 import Footer from './Footer';
 
-import TestNav from './TestNav'
+// import TestNav from './TestNav'
 // function to check value of currentPage (from useState)
 export default function Body() {
 
   return (
     <>
-      <TestNav />
+      <Header />
       <Footer />
     </>
   );
