@@ -19,15 +19,18 @@
     min-height: 100vh;
 }
 
-nav {
-    width: 100vw;
-    /* padding: 2% 5%!important; */
-    margin-left: 0!important;
-    margin-right: 0!important;
+header {
+    padding-top: 3%;
+}
+
+main {
+    width: 90%;
+    margin: 3rem 5%!important;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 div.container-fluid {
-    width: 100vw;
     padding: 0!important;
     margin: 0 5%;
     justify-content: space-between;
@@ -36,6 +39,8 @@ div.container-fluid {
 h1 {
     color: var(--light-bright);
     font-size: 3rem;
+    padding: 0;
+    margin: 0;
 }
 
 a {
@@ -60,14 +65,14 @@ svg.footer-icons:focus {
 .underline {
     border-bottom: solid 1px var(--light-bright);
     width: 100%;
+    flex-direction: row;
+    padding-bottom: 0;
+    margin-bottom: 0;
+
 }
 
 h2, h5 {
     color: var(--light-bright);
-}
-
-main {
-    margin: 1rem 5%!important;
 }
 
 p {
@@ -125,29 +130,41 @@ footer {
 /* media queries */
 @media only screen and (max-width: 992px) {
     .nav-link, .nav-link.active {
-        padding-bottom: 1rem 0;
+        padding-right: 1rem;
     }
-    .contact-info {
-        flex-direction: column;
-        
-    }
-    
     
 }
 
-/* media queries */
 @media only screen and (max-width: 600px) {
     h1 {
         font-size: 2rem;
     }
-    .nav-link, .nav-link.active {
-        padding-bottom: 0.5rem 0;
+    a.nav-link, a.nav-link.active {
+        padding-bottom: 0 0 0.5rem;
     }
     h5 {
         font-size: 1rem;
     }
     form.contact-form {
         width: 100%
+    }
+    .contact-div {
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center; 
+        margin: 0rem 1rem;
+    } 
+}
+
+@media only screen and (max-width: 360px) {
+    h1 {
+        margin-bottom: .25rem;
+    }
+    a.nav-link, a.nav-link.active {
+        padding:0 0 0.25rem;
+    }
+    .underline {
+        flex-direction: column;
     }
 }
 

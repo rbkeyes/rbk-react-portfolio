@@ -6,7 +6,7 @@ export default function Footer() {
     return (
         <footer className="mt-auto">
         <ul>
-            <IconContext.Provider value={{ className: "footer-icons", size: "2.5rem"}}>
+            <IconContext.Provider value={{ className: "footer-icons", size: "2rem"}}>
             <>
             <li><a href="https://github.com/rbkeyes" alt="Link to github profile"><FaGithub /></a></li>
             <li><a href="https://www.linkedin.com/in/reedkeyesrd/" alt="link to linkedin profile"><FaLinkedin /></a></li>

@@ -41,26 +41,26 @@ function ContactForm() {
     setMessage(e.target.value);
   };
 
-  const styles = {
-    textarea: {
-      "height": "10rem",
-    },
-    contactDiv: {
-      "margin-top": "1rem"
-    },
-    contactInfo: {
-      // "margin": "1rem",
-      "display": "inline",
-      "color": "var(--light-bright"
-      // "width": "6rem",
-    }
-  };
-
   return (
+    <>
+    <div className="contact-div d-flex justify-content-end align-items-start mt-2"
+    style={{margin: "0 5%"}}>
+          <div className="me-4">
+            <p className="mt-0 mb-0" style={{color: "var(--light-bright"}}> phone: 650-400-2394
+            </p>
+          </div>
+          <div>
+            <p className="mt-0 mb-0 hover">
+              <a href="mailto: #">
+                email: rbkeyes@gmail.com
+              </a>
+            </p>
+          </div>
+        </div>
     <main>
-      <div className="d-flex justify-content-center align-items-start">
-        <form className="contact-form col-sm-12 col-md-8 col-lg-6" onSubmit={handleSubmit}>
-          <h2>Contact</h2>
+      <h2>Contact</h2>
+      <div className="d-flex justify-content-start align-items-start">
+        <form className="contact-form col-sm-12 col-md-8 col-lg-4" onSubmit={handleSubmit}>
           <div className="form-floating mt-3">
             <input
               className="form-control name"
@@ -93,28 +93,17 @@ function ContactForm() {
               value={message}
               name="message"
               id="floatingMessage"
-              style={styles.textarea}
+              style={{height: "10rem"}}
               onChange={handleMessage}
             ></textarea>
-            <label>what can I do for you?</label>
+            <label>how can I help?</label>
           </div>
           <button type="submit" className="btn mt-3" id="submit-button">Submit</button>
         </form>
-      </div>
-      <div className="contact-info d-flex justify-content-center align-items-center">
-        <div style={styles.contactDiv}>
-          <p style={styles.contactInfo}> phone: 650-400-2394
-          </p>
-        </div>
-        <div className="hover" style={styles.contactDiv}>
-          <p style={styles.contactInfo}>
-            <a href="mailto: #">
-              email: rbkeyes@gmail.com
-            </a>
-          </p>
-        </div>
+        
       </div>
     </main >
+    </>
   )
 };
 

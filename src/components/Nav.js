@@ -6,7 +6,7 @@ import Navbar from 'react-bootstrap/Navbar';
 
 function PageNav({ currentPage, handlePageChange }) {
   return (
-    <Navbar variant="dark" className="format-nav" expand="lg">
+    <Navbar variant="dark" className="format-nav mb-0 pb-0" expand="lg">
       <Container fluid>
         <Navbar.Brand href="#about">
           <h1>Reed Keyes</h1>
@@ -16,7 +16,7 @@ function PageNav({ currentPage, handlePageChange }) {
         // className="underline"
         id="basic-navbar-nav"
         > */}
-          <Nav className="underline justify-content-end">
+          <Nav className="underline">
             <Nav.Link
               href='#about'
               onClick={() => handlePageChange('About')}
