@@ -8,75 +8,89 @@
     --light-bright: rgb(223, 106, 255);
 
 }
+
 #root {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     background-color: var(--dark);
     min-height: 100vh;
-    padding: 3%;
     box-sizing: border-box;
     min-height: 100vh;
 }
 
-header {
-    display: flex;
-    align-items: center;
+nav {
+    width: 100vw;
+    /* padding: 2% 5%!important; */
+    margin-left: 0!important;
+    margin-right: 0!important;
+}
+
+div.container-fluid {
+    width: 100vw;
+    padding: 0!important;
+    margin: 0 5%;
     justify-content: space-between;
-    padding-bottom: 2rem;
-    color: var(--light-bright);
-    border-bottom: dotted var(--light-bright) 2px;
 }
 
 h1 {
-    font-size: 4rem;
-    padding: 0.5rem 1rem;
+    color: var(--light-bright);
+    font-size: 3rem;
 }
 
 a {
     text-decoration: none;
+    color: var(--light-bright)
 }
 
-.bs.navbar-color {
-    color: var(--light-bright)!important;
-}
-
-a.nav-link, svg.footer-icons {
+a.nav-link,
+svg.footer-icons {
     color: var(--light-bright);
 }
 
-a.nav-link:hover, .nav-link.active, .navbar-nav, svg.footer-icons:hover, svg.footer-icons:focus {
-    color: var(--bright)!important;
+h1:hover,
+a:hover,
+.nav-link.active,
+.navbar-nav,
+svg.footer-icons:hover,
+svg.footer-icons:focus {
+    color: var(--bright) !important;
+}
+
+.underline {
+    border-bottom: solid 1px var(--light-bright);
+    width: 100%;
+}
+
+h2, h5 {
+    color: var(--light-bright);
 }
 
 main {
-    margin: 5%;
-    align-items: center;
-
-}
-
-h2, h4, h5, h6 {
-    color: var(--light-bright);
-    /* margin-bottom: */
+    margin: 1rem 5%!important;
 }
 
 p {
     color: var(--light);
+    margin-top: 1rem;
 }
 
-    .card {
-        margin: 1rem;
-        background-color: var(--accent)
+.card {
+    margin: 1rem;
+    background-color: var(--accent)
 }
 
 div.card-img-overlay {
-    background-color:rgb(45, 40, 52, .75)
+    background-color: rgb(45, 40, 52, .75)
 }
 
-a.card-link, .card-title {
+a.card-link,
+.card-title {
     color: var(--light);
 }
 
-.card-title:hover, a.card-link:hover {
+.card-title:hover,
+a.card-link:hover {
     color: var(--accent)
 }
 
@@ -104,6 +118,36 @@ button.btn:hover {
     color: var(--dark)
 }
 
+footer {
+    margin-bottom: 1.5rem;
+}
 
+/* media queries */
+@media only screen and (max-width: 992px) {
+    .nav-link, .nav-link.active {
+        padding-bottom: 1rem 0;
+    }
+    .contact-info {
+        flex-direction: column;
+        
+    }
+    
+    
+}
 
+/* media queries */
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+    .nav-link, .nav-link.active {
+        padding-bottom: 0.5rem 0;
+    }
+    h5 {
+        font-size: 1rem;
+    }
+    form.contact-form {
+        width: 100%
+    }
+}
 

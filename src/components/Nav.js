@@ -6,12 +6,17 @@ import Navbar from 'react-bootstrap/Navbar';
 
 function PageNav({ currentPage, handlePageChange }) {
   return (
-    <Navbar expand="lg">
-      <Container>
-        <Navbar.Brand href="#about">Reed Keyes</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
+    <Navbar variant="dark" className="format-nav" expand="lg">
+      <Container fluid>
+        <Navbar.Brand href="#about">
+          <h1>Reed Keyes</h1>
+          </Navbar.Brand>
+        {/* <Navbar.Toggle aria-controls="basic-navbar-nav" /> */}
+        {/* <Navbar.Collapse 
+        // className="underline"
+        id="basic-navbar-nav"
+        > */}
+          <Nav className="underline justify-content-end">
             <Nav.Link
               href='#about'
               onClick={() => handlePageChange('About')}
@@ -33,11 +38,11 @@ function PageNav({ currentPage, handlePageChange }) {
             <Nav.Link
               href='#contact'
               onClick={() => handlePageChange('Contact')}
-              className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
+              className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'} 
             >Contact Me
             </Nav.Link>
           </Nav>
-        </Navbar.Collapse>
+        {/* </Navbar.Collapse> */}
       </Container>
     </Navbar>
   );

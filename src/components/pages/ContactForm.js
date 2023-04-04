@@ -1,7 +1,4 @@
 import React, { useState } from 'react';
-import { IconContext } from 'react-icons';
-import { FaPhone } from 'react-icons/fa';
-import { GoMail } from "react-icons/go";
 
 function ContactForm() {
   // useState variables for name, email, and form message
@@ -49,11 +46,13 @@ function ContactForm() {
       "height": "10rem",
     },
     contactDiv: {
-      "margin": "3rem"
+      "margin-top": "1rem"
     },
     contactInfo: {
-      "padding": "1rem",
-      "display": "inline-block",
+      // "margin": "1rem",
+      "display": "inline",
+      "color": "var(--light-bright"
+      // "width": "6rem",
     }
   };
 
@@ -102,18 +101,17 @@ function ContactForm() {
           <button type="submit" className="btn mt-3" id="submit-button">Submit</button>
         </form>
       </div>
-      <div className="d-flex justify-content-center align-items-center">
+      <div className="contact-info d-flex justify-content-center align-items-center">
         <div style={styles.contactDiv}>
-        <IconContext.Provider value={{ className: "footer-icons", size: "1.5rem" }}>
-        <FaPhone />
-              <h5 style={styles.contactInfo}> 650-400-2394</h5>
-        </IconContext.Provider>
+          <p style={styles.contactInfo}> phone: 650-400-2394
+          </p>
         </div>
-        <div style={styles.contactDiv}>
-        <IconContext.Provider value={{ className: "footer-icons", size: "2rem" }}>
-        <GoMail />
-              <h5 style={styles.contactInfo}> rbkeyes@gmail.com</h5>
-        </IconContext.Provider>
+        <div className="hover" style={styles.contactDiv}>
+          <p style={styles.contactInfo}>
+            <a href="mailto: #">
+              email: rbkeyes@gmail.com
+            </a>
+          </p>
         </div>
       </div>
     </main >
