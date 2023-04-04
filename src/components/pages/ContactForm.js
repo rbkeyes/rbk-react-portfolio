@@ -43,7 +43,7 @@ function ContactForm() {
 
   return (
     <>
-    <div className="contact-div d-flex justify-content-end align-items-start mt-2"
+    <div className="contact-div d-flex justify-content-end align-items-start"
     style={{margin: "0 5%"}}>
           <div className="me-4">
             <p className="mt-0 mb-0" style={{color: "var(--light-bright"}}> phone: 650-400-2394
@@ -57,10 +57,10 @@ function ContactForm() {
             </p>
           </div>
         </div>
-    <main className="mt-3">
+    <main className="mt-4">
       <h2>Contact</h2>
       <div className="d-flex justify-content-start align-items-start">
-        <form className="contact-form col-sm-12 col-md-8 col-lg-4" onSubmit={handleSubmit}>
+        <form className="contact-form" onSubmit={handleSubmit}>
           <div className="form-floating mt-3">
             <input
               className="form-control name"
