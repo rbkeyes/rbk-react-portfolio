@@ -57,7 +57,7 @@ function ContactForm() {
             </p>
           </div>
         </div>
-    <main>
+    <main className="mt-3">
       <h2>Contact</h2>
       <div className="d-flex justify-content-start align-items-start">
         <form className="contact-form col-sm-12 col-md-8 col-lg-4" onSubmit={handleSubmit}>

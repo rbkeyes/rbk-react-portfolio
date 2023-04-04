@@ -3,14 +3,10 @@ import React from 'react';
 export default function About() {
   return (
     <main>
-      <h2>About Page</h2>
+      <h2>About</h2>
       <p>
-        Nunc pharetra finibus est at efficitur. Praesent sed congue diam.
-        Integer gravida dui mauris, ut interdum nunc egestas sed. Aenean sed
-        mollis diam. Nunc aliquet risus ac finibus porta. Nam quis arcu non
-        lectus tincidunt fermentum. Suspendisse aliquet orci porta quam semper
-        imperdiet. Praesent euismod mi justo, faucibus scelerisque risus cursus
-        in. Sed rhoncus mollis diam, sit amet facilisis lectus blandit at.
+      Reed is a registered dietitian turned web-developer living in the Bay Area. She will be completing the U.C. Berkeley Extensions coding boot camp in mid-March. I need to write a more complete bio but for the sake of turning this in, here's some filler text. 
+      Etsy cray biodiesel mustache, vibecession DSA artisan marxism copper mug neutral milk hotel squid normcore cardigan glossier. Next level deep v 8-bit neutral milk hotel mumblecore cupping umami. Vegan aesthetic cardigan, DSA listicle letterpress coloring book fashion axe semiotics vaporware godard mustache pabst.
       </p>
     </main>
   );
