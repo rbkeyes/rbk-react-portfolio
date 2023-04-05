@@ -8,3 +8,5 @@ A project portfolio page built using react.
 [Configure React Icons](https://github.com/react-icons/react-icons).
 
 [hipster ipsum](https://hipsum.co/?paras=5&type=hipster-centric)
+
+[download file](https://www.geeksforgeeks.org/how-to-download-pdf-file-in-reactjs/)
