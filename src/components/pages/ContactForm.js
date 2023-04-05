@@ -60,7 +60,7 @@ function ContactForm() {
     <main className="mt-4">
       <h2>Contact</h2>
       <div className="d-flex justify-content-start align-items-start">
-        <form className="contact-form" onSubmit={handleSubmit}>
+        <form className="contact-form" onSubmit={handleSubmit} style={{width: "32rem"}}>
           <div className="form-floating mt-3">
             <input
               className="form-control name"

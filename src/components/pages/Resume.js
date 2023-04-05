@@ -4,14 +4,14 @@ export default function Resume() {
   // function to download pdf on button click
   const onButtonClick = () => {
     // using Java Script method to get PDF file
-    fetch('SamplePDF.pdf').then(response => {
+    fetch('samplePDF.pdf').then(response => {
         response.blob().then(blob => {
             // Creating new object of PDF file
             const fileURL = window.URL.createObjectURL(blob);
             // Setting various property values
             let alink = document.createElement('a');
             alink.href = fileURL;
-            alink.download = 'SamplePDF.pdf';
+            alink.download = 'samplePDF.pdf';
             alink.click();
         })
     })
@@ -39,7 +39,7 @@ export default function Resume() {
         </p>
         </div>
         <div className="btnDiv">
-        <button onClick={onButtonClick}>Download</button>
+        <button className="btn" onClick={onButtonClick}>Download</button>
         </div>
       </section>
     </main>
