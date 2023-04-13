@@ -1,7 +1,7 @@
 :root {
-    --light: #e5e0eb;
+    --light: #d6d1dc;
     --dark: #2D2834;
-    --med-light: #8B8B9A;
+    --med-light: #babad3;
     --med-dark: #6B6978;
     --accent: #a693ae;
     --bright: rgb(200, 0, 255);
@@ -24,6 +24,7 @@ header {
 }
 
 main {
+    color: var(--light);
     width: 90%;
     margin-top: 3rem; 
     /* margin-5%!important; */
@@ -51,6 +52,7 @@ a {
 
 a.nav-link,
 svg.footer-icons {
+    /* font-size: 1.5rem; */
     color: var(--light-bright);
 }
 
@@ -72,12 +74,21 @@ svg.footer-icons:focus {
 
 }
 
-h2, h5 {
+h2, h3, h5 {
     color: var(--light-bright);
 }
 
+h3 {
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-size: 1.25rem;
+    font-size: 1rem;
+}
+
 p {
-    color: var(--light);
+    color: var(--med-light);
     margin-top: 1rem;
 }
 
@@ -90,29 +101,27 @@ div.card-img-overlay {
     background-color: rgb(45, 40, 52, .75)
 }
 
-a.card-link,
+.card-icon,
 .card-title {
     color: var(--light);
 }
 
 .card-title:hover,
-a.card-link:hover {
+.card-icon:hover
+{
     color: var(--accent)
 }
 
 ul {
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
 
 li {
-    font-size: 1.5rem;
-    margin: 0 1rem;
+    list-style-type: none;
+    text-align: right;
 }
+
 
 button.btn {
     background-color: var(--light-bright);
@@ -128,6 +137,20 @@ footer {
     margin-bottom: 1.5rem;
 }
 
+footer ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+footer li {
+    padding: 0 1rem;
+}
+
+
 /* media queries */
 @media only screen and (max-width: 992px) {
     header {
@@ -138,6 +161,18 @@ footer {
     }
     main {
         margin-top: 2rem;
+    }
+
+    h3 {
+        font-size: 1.25rem;
+    }
+
+    .res-flex {
+        flex-direction: column;
+    }
+    .resume li {
+        text-align: left;
+        margin-left: 1rem;
     }
 }
 
