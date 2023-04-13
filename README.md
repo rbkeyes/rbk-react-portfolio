@@ -32,7 +32,7 @@ I used a combination of bootstrap css, react-bootstrap, and custom css for styli
 This application was deployed using GitHub Pages.
 
 
-![screenshot of application's Portfolio page](/src/images/portfolio-screenshot.png)
+![screenshot of application's Portfolio page](./src/images/portfolio-screenshot.png)
 
 ## Table of Contents
 
