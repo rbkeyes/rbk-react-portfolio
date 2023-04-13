@@ -1,17 +1,18 @@
 {
   "files": {
-    "main.css": "/rbk-react-portfolio/static/css/main.4e22d922.css",
-    "main.js": "/rbk-react-portfolio/static/js/main.0ca098ef.js",
+    "main.css": "/rbk-react-portfolio/static/css/main.fc2588a4.css",
+    "main.js": "/rbk-react-portfolio/static/js/main.56fc7b18.js",
     "static/media/craft-but-not-least-screenshot.png": "/rbk-react-portfolio/static/media/craft-but-not-least-screenshot.9678d25c55ad5a11bda3.png",
     "static/media/task-tracker-2000-screenshot.png": "/rbk-react-portfolio/static/media/task-tracker-2000-screenshot.758d5fc0206fd8fc66fe.png",
     "static/media/blog-about-it-screenshot.png": "/rbk-react-portfolio/static/media/blog-about-it-screenshot.ae3e290b7c82b08a31db.png",
     "static/media/take-some-notes-screenshot.png": "/rbk-react-portfolio/static/media/take-some-notes-screenshot.84182f01cc668fcbb123.png",
+    "static/media/headshot.jpg": "/rbk-react-portfolio/static/media/headshot.874396cbc41fa458e3f0.jpg",
     "index.html": "/rbk-react-portfolio/index.html",
-    "main.4e22d922.css.map": "/rbk-react-portfolio/static/css/main.4e22d922.css.map",
-    "main.0ca098ef.js.map": "/rbk-react-portfolio/static/js/main.0ca098ef.js.map"
+    "main.fc2588a4.css.map": "/rbk-react-portfolio/static/css/main.fc2588a4.css.map",
+    "main.56fc7b18.js.map": "/rbk-react-portfolio/static/js/main.56fc7b18.js.map"
   },
   "entrypoints": [
-    "static/css/main.4e22d922.css",
-    "static/js/main.0ca098ef.js"
+    "static/css/main.fc2588a4.css",
+    "static/js/main.56fc7b18.js"
   ]
 }
