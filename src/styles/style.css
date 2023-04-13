@@ -166,7 +166,6 @@ footer li {
     h3 {
         font-size: 1.25rem;
     }
-
     .res-flex {
         flex-direction: column;
     }
@@ -174,11 +173,21 @@ footer li {
         text-align: left;
         margin-left: 1rem;
     }
+    .about {
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-body {
+        margin-right: 0!important;
+    }
+    .headshot {
+        margin-top: 1.5rem;        
+    }
 }
 
 @media only screen and (max-width: 600px) {
     header {
-        margin-top: 1.5rem!important;
+        padding-top: 1.5rem!important;
     }
     h1 {
         font-size: 2rem;
@@ -201,6 +210,7 @@ footer li {
         align-items: center; 
         margin: 0rem 1rem;
     } 
+
 }
 
 @media only screen and (max-width: 360px) {

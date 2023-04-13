@@ -5,7 +5,7 @@ import { FaGithub, FaLinkedin, FaRavelry } from 'react-icons/fa';
 export default function Footer() {
     return (
         <footer className="mt-auto">
-        <ul>
+        <ul className="mt-5">
             <IconContext.Provider value={{ className: "footer-icons", size: "2rem"}}>
             <>
             <li><a href="https://github.com/rbkeyes" alt="Link to github profile"><FaGithub /></a></li>
