@@ -16,12 +16,23 @@ Technologies used include:
 - bootstrap
 - react-bootstrap
 
-This is a single-page application build using react. It includes components for the 
+This is a single-page application build using react. It includes components for the Header, Nav, and Footer, which are rendered on each page. 
 
+The About page displays a brief bio. *Note:* current bio is placeholder text, will be updated upon completion of boot camp. 
+
+The Portfolio page displays project cards with links to each deployed project and the associated github repo. Each project card is rendered to the page using the Project component.
+
+The ContactForm page contains my current contact information as well as a contact form. *Note:* contact form does not submit as there is no backend to the application yet. Functionality to be added in future development. 
+
+The Resume page displays my resume information, with a button to download a PDF copy of the resume. *Note:* resume is not up to date, will be updated upon completion of boot camp.
+
+The application was styled using a combination of bootstrap css, react-bootstrap, and custom css. Icons used are from react-icons.
+
+This application was deployed using GitHub Pages.
+
+![screenshot of application's Portfolio page](public/images/react-portfolio-screenshot.png)
 
 ## Table of Contents
-
-- [Installation](#installation)
 
 - [Usage](#usage)
 
@@ -34,60 +45,22 @@ This is a single-page application build using react. It includes components for 
 - [Contact](#contact)
 
 
-## Installation
-
-You must have Node.js installed on your computer. Instructions to install can be found [here](https://nodejs.org/en/).
-
-Clone the [GitHub repo](https://github.com/rbkeyes/track-employees) to a local repo. The package-json includes the necessary packages and can be installed by running 
-```
-npm i
-```
-in the terminal command line. 
-
-To connect to mysql, be sure to add your password to the mysql connection in the queries file, as shown below:
-```
- host: 'localhost',
-        user: 'root',
-        database: 'employees_db',
-        password: '[insert your password here]',
-```
-You will also need to sign into mysql and run
-```
-SOURCE ./db/schema.sql
-```
-to create the database and tables if they have not already been created. You can also choose to run
-```
-SOURCE ./db/seeds.sql
-```
-to seed the database with started data prior to using. Or, you can choose to add your own data using the prompts when you run the application.
-
-
 ## Usage
 
-To use, open an integrated terminal from your local cloned repo. Be sure to follow installation instructions above before attempting to run.
-
-In the command line, enter the command 
-```
-npm start
-```
-or
-```
-node index
-```
-to start the application. You will be prompted to respond to questions in the command line. Use the up and down arrows on your keypad to choose your answer, and press return/enter to select. 
-
-To exit the program, either select "Exit" from the main menu prompt when offered, or you can enter "control c" in the command line to exit.
-
-**Video demonstrating usage:**
-
-https://user-images.githubusercontent.com/114431225/224804052-d1c9b30a-7d3a-4e69-ae8a-cc4de11a439b.mp4
+Navigate to the [application](https://rbkeyes.github.io/rbk-react-portfolio/). Use the navigation links in the header to explore the pages. Links in footer direct the user to my [github profile](https://github.com/rbkeyes), [linkedIn profile](https://www.linkedin.com/in/reedkeyesrd/), and [ravelry page](https://www.ravelry.com/people/highfiberhabit). *Note:* ravelry link is a placeholder for now.
 
 
 ## Credits
 
 Coursework for the bootcamp was used as reference material in completing this project.
 
-Documentation for [inquirer](https://www.npmjs.com/package/inquirer) was also used as a reference.
+Documentation for [React](https://react.dev/) was incredibly helpful.
+
+I also relied on documentation for [bootstrap](https://getbootstrap.com/) and [react-bootstrap](https://react-bootstrap.github.io/).
+
+Filler text courtesy of [hipster ipsum](https://hipsum.co/?paras=5&type=hipster-centric).
+
+I followed [this tutorial](https://www.geeksforgeeks.org/how-to-download-pdf-file-in-reactjs/) by geeksforgeeks for help with adding the file download for the Resume page.
 
 No starter code was provided for this project.
 
@@ -115,6 +88,6 @@ Or, you can [email me](mailto:rbkeyes@gmail.com).
 
 [Configure React Icons](https://github.com/react-icons/react-icons).
 
-[hipster ipsum](https://hipsum.co/?paras=5&type=hipster-centric)
 
-[download file](https://www.geeksforgeeks.org/how-to-download-pdf-file-in-reactjs/)
+
+
