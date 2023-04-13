@@ -3,8 +3,6 @@ import { IconContext } from "react-icons";
 import { FaGithub } from "react-icons/fa";
 
 
-
-
 function Project( {...props} ) {
 
     const [onHover, setHover] = useState(false);
