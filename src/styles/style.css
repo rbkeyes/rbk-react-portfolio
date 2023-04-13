@@ -154,7 +154,7 @@ footer li {
 /* media queries */
 @media only screen and (max-width: 992px) {
     header {
-        margin-top: 2rem!important;
+        padding-top: 2rem!important;
     }
     .nav-link, .nav-link.active {
         padding-right: 1rem;
