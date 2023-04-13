@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/rbk-react-portfolio/static/css/main.48f4f44f.css",
+    "main.js": "/rbk-react-portfolio/static/js/main.cd2e7817.js",
+    "index.html": "/rbk-react-portfolio/index.html",
+    "main.48f4f44f.css.map": "/rbk-react-portfolio/static/css/main.48f4f44f.css.map",
+    "main.cd2e7817.js.map": "/rbk-react-portfolio/static/js/main.cd2e7817.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.48f4f44f.css",
+    "static/js/main.cd2e7817.js"
+  ]
+}
