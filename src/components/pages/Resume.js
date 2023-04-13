@@ -4,14 +4,14 @@ export default function Resume() {
   // function to download pdf on button click
   const onButtonClick = () => {
     // using Java Script method to get PDF file
-    fetch('samplePDF.pdf').then(response => {
+    fetch('sample-resume-rbk.pdf').then(response => {
       response.blob().then(blob => {
         // Creating new object of PDF file
         const fileURL = window.URL.createObjectURL(blob);
         // Setting various property values
         let alink = document.createElement('a');
         alink.href = fileURL;
-        alink.download = 'samplePDF.pdf';
+        alink.download = 'sample-resume-rbk.pdf';
         alink.click();
       })
     })
