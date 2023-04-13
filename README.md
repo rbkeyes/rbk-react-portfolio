@@ -71,7 +71,7 @@ No starter code was provided for this project.
 
 ## License
 
-[MIT license](./LICENSE)
+[MIT license](https://opensource.org/license/mit/)
 
 
 ## Tests
