@@ -15,6 +15,7 @@ Technologies used include:
 - react
 - bootstrap
 - react-bootstrap
+- gh-pages
 
 This is a single-page application build using react. It includes components for the Header, Nav, and Footer, which are rendered on each page. 
 
@@ -26,11 +27,12 @@ The ContactForm page contains my current contact information as well as a contac
 
 The Resume page displays my resume information, with a button to download a PDF copy of the resume. *Note:* resume is not up to date, will be updated upon completion of boot camp.
 
-The application was styled using a combination of bootstrap css, react-bootstrap, and custom css. Icons used are from react-icons.
+I used a combination of bootstrap css, react-bootstrap, and custom css for styling. Icons used are from react-icons.
 
 This application was deployed using GitHub Pages.
 
-![screenshot of application's Portfolio page](/src/images/react-portfolio-screenshot.png)
+
+![screenshot of application's Portfolio page](/src/images/portfolio-screenshot.png)
 
 ## Table of Contents
 
