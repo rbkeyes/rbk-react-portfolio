@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import { IconContext } from "react-icons";
 import { FaGithub } from "react-icons/fa";
 
+
+
+
 function Project( {...props} ) {
 
     const [onHover, setHover] = useState(false);
@@ -10,13 +13,13 @@ function Project( {...props} ) {
         <div className="col">
             <div
                 className="card"
-                key={props.project.title}
+                
                 onMouseEnter={(e) => setHover(true)}
                 onMouseLeave={(e) => setHover(false)}
                 >
                 <img
                     className="card-img img-fluid"
-                    src={window.location.origin + props.project.path}
+                    src={props.project.path}
                     alt='Screenshot of deployed project'
                 ></img>
                 {onHover &&

@@ -30,7 +30,7 @@ The application was styled using a combination of bootstrap css, react-bootstrap
 
 This application was deployed using GitHub Pages.
 
-![screenshot of application's Portfolio page](public/images/react-portfolio-screenshot.png)
+![screenshot of application's Portfolio page](/src/images/react-portfolio-screenshot.png)
 
 ## Table of Contents
 
