@@ -2,8 +2,15 @@ import craft from '../images/craft-but-not-least-screenshot.png';
 import blog from '../images/blog-about-it-screenshot.png';
 import notes from '../images/take-some-notes-screenshot.png';
 import tasks from '../images/task-tracker-2000-screenshot.png';
+import petpal from '../images/petpal-screenshot.png';
 
 const projects = [
+    {
+        title: 'Pet Pal',
+        path: petpal,
+        link: 'https://petpal.herokuapp.com/',
+        github: 'https://github.com/Maislinn/Project3_MERN'
+    },
     {
         title: 'Craft But Not Least',
         path: craft,
