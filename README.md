@@ -49,7 +49,7 @@ This application was deployed using GitHub Pages.
 
 ## Usage
 
-Navigate to the [application](https://rbkeyes.github.io/rbk-react-portfolio/). Use the navigation links in the header to explore the pages. Links in footer direct the user to my [github profile](https://github.com/rbkeyes), [linkedIn profile](https://www.linkedin.com/in/reedkeyesrd/), and [ravelry page](https://www.ravelry.com/people/highfiberhabit). *Note:* ravelry link is a placeholder for now.
+Navigate to the [homepage](https://rbkeyes.github.io/rbk-react-portfolio/). Use the navigation links in the header to explore the pages. Links in footer direct the user to my [github profile](https://github.com/rbkeyes), [linkedIn profile](https://www.linkedin.com/in/reedkeyesrd/), and [ravelry page](https://www.ravelry.com/people/highfiberhabit). *Note:* ravelry link is a placeholder for now.
 
 
 ## Credits
@@ -84,11 +84,6 @@ Still have questions? Find me on [GitHub](https://github.com/rbkeyes).
 Or, you can [email me](mailto:rbkeyes@gmail.com).
 
 
-## Credits
-
-[React-Icons](https://react-icons.github.io/react-icons/icons?name=fa) documentation was referenced to import and utilize icons in the application.
-
-[Configure React Icons](https://github.com/react-icons/react-icons).
 
 
 
