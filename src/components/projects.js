@@ -6,12 +6,6 @@ import petpal from '../images/petpal-screenshot.png';
 
 const projects = [
     {
-        title: 'Pet Pal',
-        path: petpal,
-        link: 'https://petpal.herokuapp.com/',
-        github: 'https://github.com/Maislinn/Project3_MERN'
-    },
-    {
         title: 'Craft But Not Least',
         path: craft,
         link: 'https://craft-but-not-least.herokuapp.com/',
