@@ -78,9 +78,9 @@ export default function Resume() {
           <div className="projects">
             <h3>Projects</h3>
             <div className="mb-2">
-              <div className="row align-items-start">
-                <h4 className="col-4">Craft But Not Least</h4>
-                <div className="col">
+              <div className="res-flex d-flex">
+                <h4>Craft But Not Least</h4>
+                <div>
                   <a href="https://github.com/rbkeyes/craft-but-not-least" target='blank'>github.com/rbkeyes/craft-but-not-least</a>
                   <a href='https://craft-but-not-least.herokuapp.com/' target='blank'>craft-but-not-least.herokuapp.com/</a>
                 </div>
@@ -108,7 +108,7 @@ export default function Resume() {
               </div>
               <div className="res-flex d-flex">
                 <h6>Summary</h6>
-                <p>A simple CMS style blog site with user login and signup</p>
+                <p>A simple CMS style blog site with user login and</p>
               </div>
               <div className="res-flex d-flex">
                 <h6>Role</h6>
