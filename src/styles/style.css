@@ -6,7 +6,7 @@
     --accent: #a693ae;
     --bright: rgb(200, 0, 255);
     --light-bright: rgb(223, 106, 255);
-
+    --med-pink: rgb(233, 165, 252);
 }
 
 #root {
@@ -83,8 +83,19 @@ h3 {
 }
 
 h4 {
-    font-size: 1.25rem;
+    display: inline-block;
     font-size: 1rem;
+}
+
+.projects h4 {
+    width: 15rem;
+}
+
+h6 {
+    width: 14rem;
+    color: var(--med-light);
+    font-weight: normal;
+    margin-left: 1rem;
 }
 
 p {
@@ -119,7 +130,7 @@ ul {
 
 li {
     list-style-type: none;
-    text-align: right;
+    color: var(--med-light)
 }
 
 
@@ -131,6 +142,20 @@ button.btn {
 button.btn:hover {
     background-color: var(--bright);
     color: var(--dark)
+}
+
+.projects a {
+    color: var(--med-light);
+    margin-right: 1rem;
+}
+
+.projects a:hover {
+    color: var(--med-pink)!important;
+}
+
+.projects p {
+    margin: 0;
+    text-align: left;
 }
 
 footer {
@@ -170,8 +195,8 @@ footer li {
         flex-direction: column;
     }
     .resume li {
-        text-align: left;
-        margin-left: 1rem;
+        display: inline-block;
+        margin: 0 .75rem .25rem 0;
     }
     .about {
         flex-direction: column;
