@@ -1,8 +1,7 @@
 import React from 'react';
-import Project from '../Project';
+import Project from '../projects/Project';
 
-// projects object
-import projects from '../projects';
+import projects from '../dataObjects/projects';
 
 function Portfolio() {
  return(

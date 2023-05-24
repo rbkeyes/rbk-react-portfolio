@@ -1,9 +1,12 @@
 import React from 'react';
+import ProjectList from '../resume/ProjectList';
+
+import projects from '../dataObjects/projects';
 
 export default function Resume() {
   // function to download pdf on button click
   const onButtonClick = () => {
-    // using Java Script method to get PDF file
+    // using JavaScript method to get PDF file
     fetch('sample-resume-rbk.pdf').then(response => {
       response.blob().then(blob => {
         // Creating new object of PDF file
