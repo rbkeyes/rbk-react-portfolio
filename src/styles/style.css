@@ -93,12 +93,12 @@ h4 {
 
 h6 {
     width: 14rem;
-    color: var(--med-light);
+    color: var(--light);
     font-weight: normal;
     margin-left: 1rem;
 }
 
-p {
+.about p {
     color: var(--med-light);
     margin-top: 1rem;
 }
@@ -156,6 +156,7 @@ button.btn:hover {
 .projects p {
     margin: 0;
     text-align: left;
+    color: var(--med-light);
 }
 
 footer {
@@ -191,12 +192,24 @@ footer li {
     h3 {
         font-size: 1.25rem;
     }
+    .resume h6 {
+        margin-top: .5rem;
+    }
     .res-flex {
         flex-direction: column;
+    }
+    .project-links {
+        margin-left: 1rem;
+    }
+    .resume ul {
+        margin-left: 1rem;
     }
     .resume li {
         display: inline-block;
         margin: 0 .75rem .25rem 0;
+    }
+    .projects p {
+        margin-left: 1rem;
     }
     .about {
         flex-direction: column;
@@ -207,6 +220,13 @@ footer li {
     }
     .headshot {
         margin-top: 1.5rem;        
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .project-links{
+        display: flex;
+        flex-direction: column;
     }
 }
 

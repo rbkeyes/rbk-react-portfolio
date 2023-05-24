@@ -20,24 +20,26 @@ export default function Resume() {
   return (
     <main>
       <section className="resume">
-        <h2>Resume</h2>
+        <h2 className="mb-4">Resume</h2>
         <div>
-
-          <div className="res-header mt-3">
+{/* contact info */}
+          <div>
             <h3>Reed Keyes</h3>
-            <p>650-400-2394</p>
+            <div className="res-header res-flex d-flex justify-content-start align-items-center">
+            <p className="me-5">650-400-2394</p>
             <p>rbkeyes@gmail.com</p>
+            </div>
           </div>
-
+{/* summary */}
           <div className="summary">
             <h3>Summary</h3>
             <p>Motivated and detail-oriented full-stack web developer with experience in dietetics and nutrition counseling. Received certificate from coding boot camp at UC Berkeley. Skilled in front-end and backend web development with a commitment to building accessible and responsive web applications. Strong cross-team communication, collaboration, and creative problem solving skills.</p>
           </div>
-
-          <div className="skills">
+{/* skills */}
+          <div className="skills mb-3">
             <h3>Technical Skills</h3>
             <div className="res-flex d-flex justify-content-between">
-              <div className="mb-2">
+              <div>
                 <h4>Languages</h4>
                 <ul>
                   <li>HTML</li>
@@ -46,14 +48,14 @@ export default function Resume() {
                   <li>JSX</li>
                 </ul>
               </div>
-              <div className="mb-2">
+              <div>
                 <h4>Databases</h4>
                 <ul>
                   <li>SQL</li>
                   <li>MongoDB</li>
                 </ul>
               </div>
-              <div className="mb-2">
+              <div>
                 <h4>Frameworks and Libraries</h4>
                 <ul>
                   <li>React</li>
@@ -61,7 +63,7 @@ export default function Resume() {
                   <li>Tailwind CSS</li>
                 </ul>
               </div>
-              <div className="mb-2">
+              <div>
                 <h4>Tools and Technology</h4>
                 <ul>
                   <li>Git</li>
@@ -74,13 +76,13 @@ export default function Resume() {
               </div>
             </div>
           </div>
-
+{/* projects */}
           <div className="projects">
             <h3>Projects</h3>
             <div className="mb-2">
               <div className="res-flex d-flex">
                 <h4>Craft But Not Least</h4>
-                <div>
+                <div className="project-links">
                   <a href="https://github.com/rbkeyes/craft-but-not-least" target='blank'>github.com/rbkeyes/craft-but-not-least</a>
                   <a href='https://craft-but-not-least.herokuapp.com/' target='blank'>craft-but-not-least.herokuapp.com/</a>
                 </div>
@@ -98,17 +100,17 @@ export default function Resume() {
                 <p>HTML, CSS, JavaScript, Handlebars, Express, mySQL, sequelize, bcrypt</p>
               </div>
             </div>
-            <div>
+            <div className="mb-4">
               <div className="res-flex d-flex">
                 <h4>Blog About It</h4>
-                <div>
+                <div className="project-links">
                   <a href="https://github.com/rbkeyes/blog-about-it" target='blank'>github.com/rbkeyes/blog-about-it</a>
                   <a href='https://blog-about-it.herokuapp.com/login' target='blank'>blog-about-it.herokuapp.com/login</a>
                 </div>
               </div>
               <div className="res-flex d-flex">
                 <h6>Summary</h6>
-                <p>A simple CMS style blog site with user login and</p>
+                <p>A simple CMS style blog site with login required to create content</p>
               </div>
               <div className="res-flex d-flex">
                 <h6>Role</h6>
@@ -120,11 +122,11 @@ export default function Resume() {
               </div>
             </div>
           </div>
-
+{/* experience */}
           <div className="projects">
             <h3>Experience</h3>
           </div>
-
+{/* education */}
           <div className="education">
             <h3>Education</h3>
             <div className="res-flex d-flex justify-content-between mt-3">
