@@ -9,7 +9,10 @@ const projects = [
         title: 'Craft But Not Least',
         path: craft,
         link: 'https://craft-but-not-least.herokuapp.com/',
-        github: 'https://github.com/rbkeyes/craft-but-not-least'
+        github: 'https://github.com/rbkeyes/craft-but-not-least',
+        summary: 'A full-stack web application for users to buy, sell, or trade secondhand craft supplies',
+        role: 'Project Manager, debugging, deployment',
+        tools: 'HTML, CSS, JavaScript, Handlebars, Express, mySQL, sequelize, bcrypt'
     },
     {
         title: 'Blog About It',
